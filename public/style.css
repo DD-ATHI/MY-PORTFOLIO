@@ -1,0 +1,198 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333; /* Dark gray font color for text */
+    line-height: 1.6;
+}
+
+/* Wrapper */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: #01579b; /* Dark blue icon */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #01579b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #01579b;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #0288d1;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Hero section */
+.hero-header {
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-pic img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #01579b; /* Dark blue border */
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #01579b;
+}
+
+.hero-text h5 {
+    font-size: 1.5rem;
+    color: #01579b;
+    font-weight: normal;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.btn-group a {
+    display: inline-block;
+    background-color: #0288d1;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-group a:hover {
+    background-color: #01579b; /* Dark blue hover */
+}
+
+.btn-group .resume {
+    border: 2px solid #0288d1;
+    background-color: transparent;
+    color: #01579b;
+}
+
+.btn-group .resume:hover {
+    background-color: #01579b;
+    color: #fff;
+    border-color: #01579b;
+}
+
+/* Contact Information */
+#contactInfo {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    font-size: 1.1rem;
+}
+
+#contactInfo p {
+    margin: 10px 0;
+}
+
+/* Navbar toggle button */
+.togglebtn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.togglebtn span {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0288d1;
+        width: 100%;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .togglebtn {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-pic img {
+        width: 200px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
